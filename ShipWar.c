@@ -1,14 +1,17 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-typedef struct {
+typedef struct Ship Ship;
+typedef struct ShipPart ShipPart
+
+struct Ship{
   bool downed;
   ShipPart * partList;
-} Ship;
-typedef struct {
+};
+struct ShipPart{
   bool touched;
   Ship * ship;
-} ShipPart ShipPart;
+};
 
 
 
