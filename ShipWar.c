@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 typedef struct Ship Ship;
-typedef struct ShipPart ShipPart
+typedef struct ShipPart ShipPart;
 
 struct Ship{
   bool downed;
