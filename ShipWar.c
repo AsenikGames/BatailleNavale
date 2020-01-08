@@ -23,10 +23,16 @@ Ship * shipsB[5];
 ShipPart * gridA[10][10];
 ShipPart * gridB[10][10];
 
-
+int init();
 
 // Main function called when programs is launch
 int main(int argc, char const *argv[]) {
-  /* code */
+  initGame();
+  game();
   return 0;
+}
+
+// Function to initialise game parametters
+int initGame() {
+
 }
