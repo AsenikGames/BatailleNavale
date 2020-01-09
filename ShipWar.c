@@ -26,8 +26,19 @@ ShipPart * gridB[10][10];
 int initGame();
 int game();
 
+
+// print a debug message
+bool debugmode = false;
+int debug(char * msg) { if (debugmode = true) printf("[DEBUG] %s \n", msg); }
+
 // Main function called when programs is launch
 int main(int argc, char const *argv[]) {
+
+  // Reading program parameters
+  for (int i = 1; i < argc; i++) {
+    if (argv[i] == "debugmode") debugmode = true; // activate debugmode
+  }
+
   initGame();
   game();
   return 0;
@@ -35,8 +46,14 @@ int main(int argc, char const *argv[]) {
 
 // Function to initialise game parametters
 int initGame() {
+  debug("InitGame Function : Start")
 
+  debug("InitGame Function : End")
 }
 
 // Function represneting the game itself
-int game()
+int game() {
+  debug("Game Function : Start");
+  
+  debug("Game Function : End")
+}
