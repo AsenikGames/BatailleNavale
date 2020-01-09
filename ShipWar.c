@@ -26,9 +26,22 @@ ShipPart * gridB[10][10];
 int initGame();
 int game();
 
+
+// print a debug message
+bool debugmode = false;
+int debug(char * msg) { if (debugmode = true) printf("[DEBUG] %s \n", msg); }
+
 // Main function called when programs is launch
 int main(int argc, char const *argv[]) {
+<<<<<<< HEAD
   printf(" ---- Main funtion ---- \n");
+=======
+
+  // Reading program parameters
+  for (int i = 1; i < argc; i++) {
+    if (argv[i] == "debugmode") debugmode = true; // activate debugmode
+  }
+>>>>>>> Debugging
 
   initGame();
   game();
@@ -37,6 +50,7 @@ int main(int argc, char const *argv[]) {
 
 // Function to initialise game parametters
 int initGame() {
+<<<<<<< HEAD
   printf(" ---- InitGame function ---- \n");
 
   Ship s;
@@ -53,10 +67,16 @@ int initGame() {
   gridA[1][2] = &sp2;
 
   return 0;
+=======
+  debug("InitGame Function : Start")
+
+  debug("InitGame Function : End")
+>>>>>>> Debugging
 }
 
 // Function represneting the game itself
 int game() {
+<<<<<<< HEAD
   printf(" ---- Game function ---- \n");
 
   char abscisse[10] = {'A','B','C','D','E','F','G','H','I','J'};
@@ -83,4 +103,9 @@ int game() {
   printf("\n");
 
   return 0;
+=======
+  debug("Game Function : Start");
+
+  debug("Game Function : End")
+>>>>>>> Debugging
 }
