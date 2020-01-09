@@ -54,6 +54,6 @@ int initGame() {
 // Function represneting the game itself
 int game() {
   debug("Game Function : Start");
-  
+
   debug("Game Function : End")
 }
